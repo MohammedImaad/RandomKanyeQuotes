@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Random Kanye Quotes</string>
+    <string name="nointernet">You ain\'t got the internet!</string>
+    <string name="copiedToClipBoard">Copied to clipboard</string>
 </resources>

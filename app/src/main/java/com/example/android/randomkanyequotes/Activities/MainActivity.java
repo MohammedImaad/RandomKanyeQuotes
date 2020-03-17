@@ -1,5 +1,4 @@
- package com.example.android.randomkanyequotes.Activities;
-
+package com.example.android.randomkanyequotes.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,7 +43,7 @@ import retrofit2.Response;
         ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
         ClipData clip = android.content.ClipData.newPlainText("Copied Text", quoteView.getText().toString());
         clipboard.setPrimaryClip(clip);
-        Toast.makeText(this, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.copiedToClipBoard), Toast.LENGTH_SHORT).show();
     }
     public void buttonClicked(View view)
     {
@@ -64,7 +63,7 @@ import retrofit2.Response;
                 }
             });
         }else{
-            quoteView.setText("You ain't got the internet!");
+            quoteView.setText(getString(R.string.nointernet));
         }
 
     }
